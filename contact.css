@@ -1,0 +1,99 @@
+body {
+    font-family:'Times New Roman', Times, serif; /* A more modern font */
+    background-color: #e9ecef; /* Light gray background for contrast */
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Stack on small screens */
+    max-width: 800px; /* Set max width for the container */
+    width: 100%; /* Allow the container to take full width on small screens */
+    margin: 20px auto; /* Center the container */
+    background: white;
+    border-radius: 12px; /* Slightly larger border radius */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow for more depth */
+}
+
+.contact-list-container,
+.contact-details-container {
+    flex: 1;
+    padding: 20px;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-item {
+    padding: 12px;
+    border: 1px solid #2FA4EE; /* Blue border for a more vibrant look */
+    margin: 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, border-color 0.3s; /* Added transition for border color */
+    border-radius: 5px; /* Rounded corners for items */
+    background-color: #f8f9fa; /* Light background for items */
+}
+
+.contact-item:hover {
+    background-color: #2FA4EE; /* Blue background on hover */
+    color: white; /* White text on hover */
+    transform: scale(1.02); /* Slightly scale up on hover */
+    border-color: #0056b3; /* Darker blue border on hover */
+}
+
+.contact-details {
+    margin-top: 20px;
+    border-top: 2px solid #ddd;
+    padding-top: 10px;
+}
+
+.contact-details h1 {
+    margin: 0;
+    color: #007bff; /* Blue color for headings */
+    font-size: 24px; /* Larger font size for headings */
+}
+
+.contact-details p {
+    margin: 5px 0;
+    font-size: 16px; /* Default font size for paragraphs */
+    color: #333; /* Darker text color for better readability */
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row; /* Side by side on larger screens */
+    }
+
+    .contact-list-container,
+    .contact-details-container {
+        flex: 1; /* Equal width */
+    }
+}
+
+@media (max-width: 767px) {
+    .contact-list-container,
+    .contact-details-container {
+        padding: 10px; /* Reduced padding on smaller screens */
+    }
+
+    .contact-item {
+        font-size: 16px; /* Adjust font size for better readability */
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-item {
+        font-size: 14px; /* Further reduce font size for very small screens */
+    }
+
+    .contact-details h1 {
+        font-size: 20px; /* Adjust heading size */
+    }
+
+    .contact-details p {
+        font-size: 14px; /* Adjust paragraph size */
+    }
+}

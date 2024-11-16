@@ -1,0 +1,81 @@
+
+
+/* Article Section */
+article {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+article p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+article img{
+    max-width: 100%;          /* Makes the image responsive to the container width */
+    height: auto;             /* Maintains the aspect ratio */
+    width: 300px;             /* Sets an initial width for larger screens */
+    display: block;           /* Centers the image horizontally */
+    margin: 0 auto;
+
+
+}
+/* Resource Sections */
+.resource-section {
+    background-color: #e8f0ff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.resource-section h2 {
+    color: #004080;
+    margin-bottom: 10px;
+}
+
+.resource-section p {
+    margin: 10px 0;
+}
+
+ul {
+    margin-left: 20px;
+    padding: 5px;
+    color: #333;
+    list-style-type: none;
+}
+
+.btn {
+    display: inline-block;               /* Keeps the button inline */
+    margin: 10px auto;                   /* Centers the button horizontally */
+    padding: 10px 15px;
+    background-color:#2FA4EE;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #0066cc;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+}

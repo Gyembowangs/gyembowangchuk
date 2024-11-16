@@ -1,0 +1,124 @@
+/* Article container styling */
+article {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Article heading styling */
+article h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: orange;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 2px gray;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Change heading color on hover */
+article h1:hover {
+  color: darkorange; /* Change to a darker shade on hover */
+}
+
+/* Course container */
+.Course-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Individual course cards */
+.program {
+  background-color: #2FA4EE;
+  width: 30%;
+  min-width: 280px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scaling and shadow */
+}
+
+/* Hover effect for program cards */
+.program:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+/* Course image styling */
+.program img {
+  width: 95%;
+  height: 300px;
+  border-radius: 20px;
+  padding: 10px;
+  transition: transform 0.3s ease; /* Smooth transition for image */
+}
+
+/* Hover effect for images */
+.program:hover img {
+  transform: scale(1.05); /* Slightly enlarge image on hover */
+}
+
+/* Course title styling */
+.program h4 {
+  font-size: 1.2rem;
+  color: #f8f7f7;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Change course title color on hover */
+.program:hover h4 {
+  color: #ffcc00; /* Change to a bright color on hover */
+}
+
+/* Course description styling */
+.program p {
+  font-size: 20px;
+  color: #f6f0f0;
+  margin-bottom: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Read more button styling */
+.Readmore {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+
+/* Button styling */
+.Readmore a {
+  background-color:WHITE;
+  color:black;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-align: center;
+  display: inline-block;
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for button */
+}
+
+/* Hover effect for read more button */
+.Readmore a:hover {
+  background-color: #316534;
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .Course-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .program {
+      width: 90%;
+  }
+
+  .program img {
+      float: none;
+      margin: 0 auto 15px;
+  }
+}
