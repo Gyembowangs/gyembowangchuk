@@ -78,7 +78,11 @@ body {
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) 
+@media screen and (max-width: 600px) {
+  /* Place the timeline to the left */
+  .objective::after {
+      left: 31px;
+  }
 
   /* Full-width containers */
   .container {
@@ -87,12 +91,7 @@ body {
       padding-right: 25px;
   }
 
-
-  /* Make sure all circles are at the same spot */
-  .left::after, .right::after {
-      left: 15px;
-  }
-/* Make sure that all arrows are pointing leftwards */
+  /* Make sure that all arrows are pointing leftwards */
   .container::before {
       left: 60px;
       border: medium solid white;
@@ -100,8 +99,14 @@ body {
       border-color: transparent white transparent transparent;
   }
 
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+      left: 15px;
+  }
+
   /* Make all right containers behave like the left ones */
   .right {
       left: 0%;
   }
 }
+
